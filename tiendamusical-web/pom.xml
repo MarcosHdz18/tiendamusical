@@ -6,7 +6,7 @@
     <groupId>com.devmark</groupId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-
+  
   <artifactId>tiendamusical-web</artifactId>
   <packaging>war</packaging>
 
@@ -54,6 +54,11 @@
 		<groupId>org.primefaces</groupId>
 		<artifactId>primefaces</artifactId>
 		<version>${primefaces-version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.glassfish.web</groupId>
+   		<artifactId>el-impl</artifactId>
+   		<version>2.2</version>
 	</dependency>
   </dependencies>
 

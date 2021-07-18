@@ -6,7 +6,7 @@
     <groupId>com.devmark</groupId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-
+  
   <artifactId>tiendamusical-entities</artifactId>
   
   <name>tiendamusical-entities</name>
@@ -20,6 +20,7 @@
       <version>${junit-version}</version>
       <scope>test</scope>
     </dependency>
+    
     <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
 	<dependency>
 	    <groupId>org.hibernate</groupId>

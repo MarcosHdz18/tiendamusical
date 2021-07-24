@@ -58,5 +58,5 @@
     <tx:annotation-driven transaction-manager="transactionManager"/>
     
     <!-- Permite registrar las clases que se encargan de ejecutar las transacciones a la base de datos - DAO -->
-    <jpa:repositories base-package="com.devmark.tiendamusicaldata.repositories" entity-manager-factory-ref="entityManagerFactory"></jpa:repositories>
+    <jpa:repositories base-package="com.devmark.tiendamusicaldata.dao" entity-manager-factory-ref="entityManagerFactory"></jpa:repositories>
 </beans>

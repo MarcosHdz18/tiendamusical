@@ -1,0 +1,63 @@
+/**
+ * 
+ */
+package com.devmark.tiendamusicalentities.entities;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+/**
+ * @author marcos.hernandez
+ * 
+ * Entity que mapea atributos a la tabla rol en la base de datos
+ *
+ */
+@Entity
+@Table(name = "rol")
+public class Rol extends Common {
+	
+	/**
+	 * Identificador unico de la tabla rol
+	 */
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "idRol")
+	private Long idRol;
+	/**
+	 * Nombre del rol
+	 */
+	@Column(name = "nombre", length = 45, nullable = false)
+	private String nombre;
+
+	/**
+	 * @return the idRol
+	 */
+	public Long getIdRol() {
+		return idRol;
+	}
+
+	/**
+	 * @param idRol the idRol to set
+	 */
+	public void setIdRol(Long idRol) {
+		this.idRol = idRol;
+	}
+
+	/**
+	 * @return the nombre
+	 */
+	public String getNombre() {
+		return nombre;
+	}
+
+	/**
+	 * @param nombre the nombre to set
+	 */
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+}
